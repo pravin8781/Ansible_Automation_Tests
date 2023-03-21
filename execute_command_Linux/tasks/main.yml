@@ -6,5 +6,5 @@
       warn: no
     register: command_result
   - debug:
-      msg: command_result.stdout_lines
+      var: command_result
 
