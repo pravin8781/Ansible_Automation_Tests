@@ -1,0 +1,10 @@
+---
+# tasks file for Execute_Command
+  - name: Execute any command
+    command: "{{ command }}"
+    args:
+      warn: no
+    register: command_result
+  - debug:
+      var: command_result.stdout_lines
+
