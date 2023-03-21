@@ -6,5 +6,5 @@
       warn: no
     register: command_result
   - debug:
-      var: command_result
+      var: {{ command_result.stdout }}
 
